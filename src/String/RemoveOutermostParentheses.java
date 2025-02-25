@@ -1,4 +1,4 @@
-package ArraysHARD;
+package String;
 
 public class RemoveOutermostParentheses {
     public String removeOuterParentheses(String s) {
