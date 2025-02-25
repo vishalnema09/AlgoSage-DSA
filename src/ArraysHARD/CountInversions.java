@@ -2,9 +2,9 @@ package ArraysHARD;
 
 public class CountInversions {
     static int mergeAndCount(int arr[], int temp[], int left, int mid, int right) {
-        int i = left;     // Left subarray index
-        int j = mid + 1;  // Right subarray index
-        int k = left;     // Temp array index
+        int i = left;
+        int j = mid + 1;
+        int k = left;
         int invCount = 0;
 
         while (i <= mid && j <= right) {
@@ -12,7 +12,7 @@ public class CountInversions {
                 temp[k++] = arr[i++];
             } else {
                 temp[k++] = arr[j++];
-                invCount += (mid - i + 1); // All elements in left subarray are greater than arr[j]
+                invCount += (mid - i + 1);
             }
         }
 
