@@ -1,6 +1,7 @@
 package ArraysHARD;
 
 import java.util.ArrayList;
+import java.util.Arrays;
 
 public class MergeIntervals {
     public int[][] merge(int[][] intervals) {
