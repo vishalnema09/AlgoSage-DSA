@@ -27,7 +27,6 @@ public class BipartiteGraph {
                     return false;
             }
         }
-
         return true;
     }
 
