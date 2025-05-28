@@ -1,4 +1,4 @@
-package Graph.MinimumSpanningTreeAndDisjointSet;
+package Graph.OtherAlgo;
 import java.util.*;
 
 public class CriticalConnectionsNetwork {
