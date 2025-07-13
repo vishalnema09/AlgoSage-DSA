@@ -20,7 +20,6 @@ public class PerfectSumProblemMemo {
         int pick = 0;
         if (nums[i] <= target)
             pick = countSubsets(i - 1, target - nums[i], nums, dp);
-
         return dp[i][target] = (pick + notPick) % mod;
     }
 }
