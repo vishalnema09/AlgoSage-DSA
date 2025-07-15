@@ -5,7 +5,7 @@ public class TargetSumMemo {
         int total = 0;
         for (int num : nums) total += num;
 
-        if (target > total || (total + target) % 2 == 1) return 0;
+        if ((total + target) < 0 || (total + target) % 2 == 1) return 0;
 
         int sum = (total + target) / 2;
         Integer[][] dp = new Integer[nums.length][sum + 1];
