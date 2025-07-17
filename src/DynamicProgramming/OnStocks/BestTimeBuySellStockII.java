@@ -12,7 +12,6 @@ public class BestTimeBuySellStockII {
 
             ahead = curr.clone();
         }
-
         return ahead[1];
     }
 }
