@@ -2,7 +2,7 @@ package DynamicProgramming.OnStocks;
 
 import java.util.Arrays;
 
-public class BestTimeBuySellStockWithCooldown {
+public class BestTimeBuySellStockWithCooldownMemo {
     public int maxProfit(int[] prices) {
         int n = prices.length;
         int[][] dp = new int[n+2][2];
