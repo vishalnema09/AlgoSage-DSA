@@ -1,4 +1,4 @@
-package DynamicProgramming.OnSquares;
+package DynamicProgramming.MatrixChainMultiplicationAndPartition;
 
 public class PartitionArrayMaximumSumTab {
     public int maxSumAfterPartitioning(int[] arr, int k) {
