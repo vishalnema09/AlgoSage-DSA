@@ -38,4 +38,19 @@ public class MaximumWidthBinaryTree {
         }
         return maxWidth;
     }
+
+    public static void main(String[] args) {
+        TreeNode root = new TreeNode(1);
+        root.left = new TreeNode(3);
+        root.right = new TreeNode(2);
+        root.left.left = new TreeNode(5);
+        root.right.right = new TreeNode(9);
+        root.left.left.left = new TreeNode(6);
+        root.right.right.right = new TreeNode(7);
+
+        MaximumWidthBinaryTree tree = new MaximumWidthBinaryTree();
+        int maxWidth = tree.widthOfBinaryTree(root);
+
+        System.out.println("Maximum Width of Binary Tree: " + maxWidth);
+    }
 }

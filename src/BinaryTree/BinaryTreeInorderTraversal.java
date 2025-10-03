@@ -17,4 +17,14 @@ public class BinaryTreeInorderTraversal {
         inOrder(root, list);
         return list;
     }
+
+    public static void main(String[] args) {
+        TreeNode root = new TreeNode(1);
+        root.left = new TreeNode(2);
+        root.right = new TreeNode(3);
+
+        BinaryTreeInorderTraversal obj = new BinaryTreeInorderTraversal();
+        List<Integer>result = obj.inorderTraversal(root);
+        System.out.println("Inorder Traversal: " + result);
+    }
 }

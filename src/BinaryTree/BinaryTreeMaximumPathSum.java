@@ -21,4 +21,15 @@ public class BinaryTreeMaximumPathSum {
 
         return node.val + Math.max(leftGain, rightGain);
     }
+
+    public static void main(String[] args) {
+        TreeNode root = new TreeNode(-10);
+        root.left = new TreeNode(9);
+        root.right = new TreeNode(20);
+        root.right.left = new TreeNode(15);
+        root.right.right = new TreeNode(7);
+
+        BinaryTreeMaximumPathSum obj = new BinaryTreeMaximumPathSum();
+        System.out.println("Maximum Path Sum: " + obj.maxPathSum(root));
+    }
 }

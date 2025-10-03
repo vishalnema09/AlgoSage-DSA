@@ -15,12 +15,21 @@ public class ChildrenSumBinaryTree {
         return root.data;
     }
 
-    // Function to check whether all nodes of a tree have the value
-    // equal to the sum of their child nodes.
     public static int isSumProperty(Node root) {
-        // add your code here
         flag = true;
         dfs(root);
         return flag?1:0;
+    }
+
+    public static void main(String[] args) {
+        Node root = new Node(10);
+        root.left = new Node(8);
+        root.right = new Node(2);
+        root.left.left = new Node(3);
+        root.left.right = new Node(5);
+        root.right.right = new Node(2);
+
+        int result = isSumProperty(root);
+        System.out.println("Does tree follow Children Sum Property? " + (result == 1 ? "Yes" : "No"));
     }
 }

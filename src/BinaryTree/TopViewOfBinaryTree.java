@@ -11,12 +11,10 @@ public class TopViewOfBinaryTree {
         }
     }
 
-    // Function to return a list of nodes visible from the top view
-    // from left to right in Binary Tree.
     static ArrayList<Integer> topView(Node root) {
-        // code here
         ArrayList<Integer> ans = new ArrayList<>();
         if (root == null) return ans;
+
         HashMap<Integer, Node> map = new HashMap<>();
         Queue<Info> q = new LinkedList<>();
         int min = 0, max = 0;
@@ -42,5 +40,18 @@ public class TopViewOfBinaryTree {
             ans.add(map.get(i).data);
         }
         return ans;
+    }
+
+    public static void main(String[] args) {
+        Node root = new Node(1);
+        root.left = new Node(2);
+        root.right = new Node(3);
+        root.left.left = new Node(4);
+        root.left.right = new Node(5);
+        root.right.left = new Node(6);
+        root.right.right = new Node(7);
+
+        ArrayList<Integer> result = topView(root);
+        System.out.println("Top View of Binary Tree: " + result);
     }
 }

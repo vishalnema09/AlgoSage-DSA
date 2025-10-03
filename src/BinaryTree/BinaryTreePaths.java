@@ -19,4 +19,16 @@ public class BinaryTreePaths {
             backtrack(root.right, ans, curr+root.val+"->");
         }
     }
+
+    public static void main(String[] args) {
+        TreeNode root = new TreeNode(1);
+        root.left = new TreeNode(2);
+        root.right = new TreeNode(3);
+        root.left.right = new TreeNode(5);
+
+        BinaryTreePaths tree = new BinaryTreePaths();
+        List<String> paths = tree.binaryTreePaths(root);
+
+        System.out.println("All Root-to-Leaf Paths: " + paths);
+    }
 }
